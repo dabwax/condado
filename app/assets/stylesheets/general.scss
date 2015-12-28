@@ -1,0 +1,88 @@
+/* Variables */
+$gray: #6C7A89;
+$orange: #F89406;
+$green: #26A65B;
+$blue: #81CFE0;
+$purple: #663399;
+$red: #F22613;
+
+/* Navbar */
+#cn-navbar {
+  
+  a {
+    line-height: 25px;  
+  }
+
+  .navbar-text {
+    margin-top: 4px !important;
+    margin-bottom: 4px !important;
+  }
+}
+.navbar-brand img {
+  display: inline-block;
+}
+
+/* Thumbnails */
+.cn-thumbnail-gray {
+  border-left: 3px solid $gray;
+}
+
+.cn-thumbnail-orange {
+  border-left: 3px solid $orange;
+}
+
+.cn-thumbnail-green {
+  border-left: 3px solid $green;
+}
+
+.cn-thumbnail-blue {
+  border-left: 3px solid $blue;
+}
+
+.cn-thumbnail-purple {
+  border-left: 3px solid $purple;
+}
+
+.cn-thumbnail-red {
+  border-left: 3px solid $red;
+}
+
+/* Buttons */
+.cn-btn {
+  border: none;
+  color: #FFF;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
+
+  &:hover {
+    background: #222;
+    color: #FFF;
+  }
+}
+
+.cn-btn-gray {
+  background-color: $gray;
+}
+
+.cn-btn-orange {
+  background-color: $orange;
+}
+
+.cn-btn-green {
+  background-color: $green;
+}
+
+.cn-btn-blue {
+  background-color: $blue;
+}
+
+.cn-btn-purple {
+  background-color: $purple;
+}
+
+.cn-btn-red {
+  background-color: $red;
+}
+
+.cn-btn-gray {
+  background-color: $gray;
+}

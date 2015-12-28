@@ -1,10 +1,85 @@
-<%= image_tag "gollum.jpg", width: 150 %>
 
-<h1>O Condado</h1>
-<hr>
 
+<% if current_user %>
+  <div class="row">
+  
+    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+
+      <div class="cn-thumbnail-gray thumbnail">
+
+        <div class="caption">
+          <p><a href="#" class="cn-btn btn btn-block btn-default cn-btn-gray">Shopping List</a></p>
+        </div> <!-- .caption -->
+
+      </div> <!-- .thumbnail -->
+
+    </div> <!-- .col -->
+
+    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+
+      <div class="cn-thumbnail-orange thumbnail">
+
+        <div class="caption">
+          <p><a href="#" class="cn-btn btn btn-block btn-default cn-btn-orange">House Cleaning</a></p>
+        </div> <!-- .caption -->
+
+      </div> <!-- .thumbnail -->
+
+    </div> <!-- .col -->
+
+    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+
+      <div class="cn-thumbnail-green thumbnail">
+
+        <div class="caption">
+          <p><a href="#" class="cn-btn btn btn-block btn-default cn-btn-green">Movies to Watch</a></p>
+        </div> <!-- .caption -->
+
+      </div> <!-- .thumbnail -->
+
+    </div> <!-- .col -->
+    
+    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+
+      <div class="cn-thumbnail-blue thumbnail">
+
+        <div class="caption">
+          <p><a href="#" class="cn-btn btn btn-block btn-default cn-btn-blue">Decoration Shit</a></p>
+        </div> <!-- .caption -->
+
+      </div> <!-- .thumbnail -->
+
+    </div> <!-- .col -->
+    
+    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+
+      <div class="cn-thumbnail-purple thumbnail">
+
+        <div class="caption">
+          <p><a href="#" class="cn-btn btn btn-block btn-default cn-btn-purple">Financial Shit</a></p>
+        </div> <!-- .caption -->
+
+      </div> <!-- .thumbnail -->
+
+    </div> <!-- .col -->
+    
+    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+
+      <div class="cn-thumbnail-red thumbnail">
+
+        <div class="caption">
+          <p><a href="#" class="cn-btn btn btn-block btn-default cn-btn-red">Wishlist</a></p>
+        </div> <!-- .caption -->
+
+      </div> <!-- .thumbnail -->
+
+    </div> <!-- .col -->
+
+  </div> <!-- .row -->
+<% else %>
 <strong>Seja bem vindo!</strong>
 
 <p>Para usufruir do nosso aplicativo, você precisa autenticar-se com o Facebook.</p>
 
-<a href="#" class="btn btn-primary btn-lg"> <i class="fa fa-facebook"></i> Conectar com Facebook</a>
+<a href="/auth/facebook" class="cn-btn btn btn-primary btn-lg"> <i class="fa fa-facebook"></i> Conectar com Facebook</a>
+<% end %>

@@ -10,7 +10,37 @@
 </head>
 <body>
 
+<nav id="cn-navbar" class="navbar navbar-default" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="<%= root_url %>"><%= image_tag "gollum.jpg", width: 30, class: 'img-circle' %> O Condado</a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+
+    <% if current_user %>
+    <p class="pull-right navbar-text">
+      <img src="http://graph.facebook.com/<%= current_user.uid %>/picture" alt="" class="img-circle"> Signed in as <strong><%= current_user.name %></strong>! <a href="<%= signout_url %>">Sign out</a>
+    </p>
+    <% end %>
+
+    <ul class="nav navbar-nav">
+      <li><a href="<%= root_url %>">Home</a></li>
+      <li></li>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</nav>
+
 <div class="container">
+
+
 	<%= yield %>
 </div>
 	
