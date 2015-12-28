@@ -16,7 +16,7 @@ role :db,  %w{root@0e1dev.com}
 # extended properties on the server.
 set :stage, :production
 
-server '0e1dev.com', user: 'root', roles: %w{web app}, my_property: :my_value
+server '0e1dev.com', user: 'root', roles: %w{web app db}, my_property: :my_value
 
 # you can set custom ssh options
 # it's possible to pass any option but you need to keep in mind that net/ssh understand limited list of options
