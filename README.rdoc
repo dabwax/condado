@@ -1,28 +1,25 @@
-== README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+== O Condado
 
 * Ruby version
+2.2 with Rails 4.
 
 * System dependencies
+Until yet, nothing.
 
 * Configuration
+Until yet, nothing.
 
 * Database creation
+Currently, using SQLite 3. In future, we will use MongoDB.
 
 * Database initialization
+Just `rake db:migrate`.
 
 * How to run the test suite
+Until yet, nothing.
 
 * Services (job queues, cache servers, search engines, etc.)
+Until yet, nothing.
 
 * Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Push to branch production, git hook will deploy it.
