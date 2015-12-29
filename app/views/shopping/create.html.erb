@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-xs-12">
+    <h2 class="cn-title">Add New Shopping List <small>Let's fill this shit! Today is <%= Time.now.day %>/<%= Time.now.month %>.</small></h2>
+  </div>
+
+  <form action="" class="cn-form">
+    <input type="text" class="cn-input" placeholder="You want give it a name?">
+
+    <h2 class="cn-title">Products</h2>
+  
+    <div class="cn-product">
+      <input type="text" class="cn-input cn-input-sm cn-product-name" placeholder="Product Name">
+
+      <a href="#" class="cn-trash hide"><i class="fa fa-trash"></i></a>
+    </div> <!-- .cn-product -->
+
+    <div class="cn-alert alert alert-info">
+      <small><strong>Tip:</strong> If you press ENTER, the product'll be saved. You still can edit it.</small>
+
+      <div class="clearfix"></div>
+      <small><strong>Tip:</strong>Ah, if you want to accoplate some specific brand, just put the name between quotes (""). The Condado will understand. We rock, bitches!</small>
+    </div> <!-- .cn-alert -->
+
+  </form>
+</div>
