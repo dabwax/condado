@@ -1,0 +1,74 @@
+@import "variables";
+
+* {
+
+  transition: all 0.75s;
+}
+
+.cn-shopping-list {
+  height: 150px;
+  position: relative;
+  background: $gray;
+  color: #FFF;
+
+  &.cn-shopping-new-list {
+    background: $green;
+  }
+
+  a.cn-btn {
+    position: absolute;
+    left: -3%;
+    bottom: -10px;
+    width: 105%;
+    color: $green;
+    border: 1px solid $green;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 18px;
+    border-radius: 50px;
+    transform: rotate(4deg);
+
+    &:hover {
+      background: $green_hover;
+      color: #FFF;
+      border-color: $green_hover;
+      text-shadow: none;
+      transform: rotate(-6deg);
+      padding-top: 10px;
+      padding-bottom: 10px;
+      bottom: -20px;
+    }
+
+    &.cn-btn-clone {
+      font-size: 12px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      border-color: $gray;
+      color: $gray;
+
+      &:hover {
+        background: $gray;
+        color: #FFF;
+        bottom: -8px;
+        transform: rotate(0deg);
+      }
+    }
+  }
+
+  .cn-date {
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  span.month {
+    font-size: 17px;
+  }
+
+  p.items {
+    color: #CCC;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+  }
+}
